@@ -1,0 +1,8 @@
+prefix=/home/susyreyesm/ros/camera_ws/devel
+
+Name: aruco_ros
+Description: Description of aruco_ros
+Version: 2.2.2
+Cflags: -I/home/susyreyesm/ros/camera_ws/devel/include -I/home/susyreyesm/ros/camera_ws/src/aruco_ros/aruco_ros/include
+Libs: -L${prefix}/lib -laruco_ros_utils
+Requires: aruco sensor_msgs tf
