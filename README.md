@@ -39,6 +39,17 @@ cam_ws/
 
 To start the integration system, follow these steps:
 
+1. Launch the camera:
+```
+roslaunch realsense2_camera rs_camera.launch
+```
+
+2. Launch the aruco_ros node to detect the identifiable objects:
+
+```
+roslaunch aruco_ros single.launch
+```
+
 3. Launch the RViz visualization tool using the `example_rviz.launch` file:
 
 ```
@@ -62,10 +73,12 @@ To simplify the setup process, a Dockerfile is provided in the repository. The D
 
 This project acknowledges the valuable resources and guidance provided by the following tools and repositories:
 
-- ddynamic_reconfigure - Dynamic reconfiguration for ROS
-- realsense-ros - ROS packages for Intel RealSense cameras
-- aruco_ros - ROS wrapper for ArUco markers
+- [ddynamic_reconfigure](https://github.com/pal-robotics/ddynamic_reconfigure) - Dynamic reconfiguration for ROS
+- [realsense-ros](https://github.com/IntelRealSense/realsense-ros) - ROS packages for Intel RealSense cameras
+- [aruco_ros](https://github.com/pal-robotics/aruco_ros) - ROS wrapper for ArUco markers
+
 For more information on how to integrate the UR3 arm with the camera system and perform berry harvesting tasks, please refer to the provided scripts and documentation in the repository.
+
 ## 📧 **Contact Information**
 
 For any questions or further inquiries, please feel free to contact me at jair2000.0224@hotmail.com.
